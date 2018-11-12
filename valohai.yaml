@@ -1,9 +1,9 @@
 - step:
     name: greet-me
-    image: python:3.6
+    image: uber/horovod:0.15.1-tf1.11.0-torch0.4.1-py3.5
     command: echo hello
 
 - step:
     name: run resnet/cifar10
-    image: valohai/PocketFlow
+    image: uber/horovod:0.15.1-tf1.11.0-torch0.4.1-py3.5
     command: ./scripts/run_docker.sh nets/resnet_at_cifar10_run.py
