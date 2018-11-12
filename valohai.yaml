@@ -2,3 +2,8 @@
     name: greet-me
     image: python:3.6
     command: echo hello
+
+- step:
+    name: run resnet/cifar10
+    image: valohai/PocketFlow
+    command: ./scripts/run_docker.sh nets/resnet_at_cifar10_run.py
